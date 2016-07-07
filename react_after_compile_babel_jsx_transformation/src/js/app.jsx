@@ -4,6 +4,7 @@
 /*jshint newcap:false */
 /*global React, Router*/
 import React from 'react';
+import ReactDOM from 'react-dom';
 import director from 'director';
 
 var Router = director.Router;
@@ -175,7 +176,7 @@ window.app = app;
 	var model = new app.TodoModel('react-todos');
 
 	function render() {
-		React.render(
+		ReactDOM.render(
 			<TodoApp model={model}/>,
 			document.getElementsByClassName('todoapp')[0]
 		);
