@@ -3,12 +3,13 @@
 /*jshint trailing:false */
 /*jshint newcap:false */
 /*global React */
+import classNames from 'classnames';
 import React from 'react';
 
 var app = window.app || {};
 window.app = app;
 
-(function (app) {
+(function () {
 	'use strict';
 
 	app.TodoFooter = React.createClass({
@@ -62,4 +63,4 @@ window.app = app;
 			);
 		}
 	});
-})(app);
+})();

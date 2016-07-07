@@ -4,7 +4,9 @@
 /*jshint newcap:false */
 /*global React, Router*/
 import React from 'react';
+import director from 'director';
 
+var Router = director.Router;
 var app = window.app || {};
 window.app = app;
 

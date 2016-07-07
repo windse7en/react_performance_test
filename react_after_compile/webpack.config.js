@@ -1,10 +1,6 @@
 var path = require('path');
     webpack = require('webpack');
 
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-var CSS = new ExtractTextPlugin('css/todo.css');
-
 module.exports = {
   entry: [
     // 'webpack-dev-server/client?http://localhost:8080', // WebpackDevServer host and port
@@ -18,16 +14,11 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
-        loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
-      },
-      {
         test : /\.jsx?$/,
         loaders : ['babel'],
         include: path.join(__dirname, 'src'),
         exclude: /node_modules/
       }
     ]
-  },
-  plugins: [CSS]
+  }
 };

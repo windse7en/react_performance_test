@@ -3,6 +3,7 @@
 /*jshint trailing: false */
 /*jshint newcap: false */
 /*global React */
+import classNames from 'classnames';
 import React from 'react';
 
 var app = window.app || {};
