@@ -3,8 +3,7 @@
   "scripts": {
     "build": "npm run clean && npm run build-webpack",
     "clean": "rm -r dist",
-    "build-webpack": "webpack --progress --colors --display-error-details",
-    "start": "node server.js",
+    "build-webpack": "webpack --progress -p --colors --display-error-details",
     "test": "echo 'nothing to test'"
   },
   "dependencies": {
