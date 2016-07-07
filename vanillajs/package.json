@@ -4,7 +4,6 @@
     "build": "npm run clean && npm run build-webpack",
     "clean": "rm -r dist",
     "build-webpack": "webpack --progress --colors --display-error-details",
-    "start": "node server.js",
     "test": "echo 'nothing to test'"
   },
   "devDependencies": {
