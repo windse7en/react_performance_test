@@ -3,7 +3,7 @@ var path = require('path');
 
 module.exports = {
   entry: [
-    './src/js/index.js'
+    './src/js/app.js'
   ],
   output: {
     path: path.join(__dirname, 'dist/'),
@@ -12,11 +12,14 @@ module.exports = {
   module: {
     loaders: [
       {
-        test : /\.jsx?$/,
+        test : /\.js$/,
         loaders : ['babel'],
         include: path.join(__dirname, 'src'),
         exclude: /node_modules/
       }
     ]
+  },
+  node: {
+    fs: "empty"
   }
 };
